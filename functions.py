@@ -8,7 +8,7 @@ class FullContact():
     def whois(api_key = api_key, url = url,**kwargs):
         kwargs['apiKey'] = api_key
         try:
-            r = requests.get(url, params=kwargs)
+            r = requests.get(url, params=kwargs, timeout = 10)
             return r.json()
         except Exception:
             return "No Internet connection. Try Again!"
