@@ -9,7 +9,7 @@ The FullContact Developer APIs are used to manage and enhance contact informatio
 
 ## How to use this project
 1. Clone this repo
-2. Create a virtualenv and pip install requirements with `pip install requirements.txt`
+2. Create a virtualenv and pip install requirements with `pip install -r requirements.txt`
 3. launch app with `python app.py`
 4. You can now search contacts from Full Contact database.
 
@@ -29,4 +29,4 @@ Use twitter handles.
 ### LICENCE : MIT
 
 ### Credits
-The Full Contact for providing a public API.
+The Full Contact Team for providing a public API.
