@@ -13,7 +13,7 @@ The FullContact Developer APIs are used to manage and enhance contact informatio
 3. launch app with `python app.py`
 4. You can now search contacts from Full Contact database.
 
-##Email
+## Email
 Search contacts with email by using this command
 `mail <query>`
 The query should be written in the right email format.
@@ -28,5 +28,5 @@ Use twitter handles.
 
 ### LICENCE : MIT
 
-###Credits
+### Credits
 The Full Contact for providing a public API.
