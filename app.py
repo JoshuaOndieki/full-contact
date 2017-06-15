@@ -7,8 +7,7 @@
 
 from docopt import docopt,DocoptExit
 from functions import FullContact
-import cmd
-import os
+import cmd, os, sys
 from termcolor import colored,cprint
 from prettytable import *
 
@@ -45,7 +44,7 @@ def docopt_cmd(func):
 
 
 def intro():
-    os.system("clear")
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(__doc__)
 
 def whois(criteria,args):
@@ -110,7 +109,7 @@ class FContact(cmd.Cmd):
     @docopt_cmd
     def do_quit(self, arg):
         """Usage: quit"""
-        os.system('clear')
+        os.system('cls' if os.name == 'nt' else 'clear')
         print ('Full Contact has quit')
         exit()
 
@@ -120,5 +119,5 @@ if __name__ == "__main__":
         intro()
         FContact().cmdloop()
     except KeyboardInterrupt:
-        os.system("clear")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print('Full Contact has quit')
